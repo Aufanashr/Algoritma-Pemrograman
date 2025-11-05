@@ -1,0 +1,42 @@
+## operasi dictionary
+
+data_dict = {
+    "cup" : "ucup surucup",
+    "pet" : "opet saripet",
+    "ndo" : "nando surundo"
+}
+
+# panjang dictionary
+dict_len = len(data_dict)
+print(f"panjang dictionary : {dict_len}")
+
+# mengcek key exist atau tidak
+key = "cup"
+check_key = key in data_dict
+print(f"apakah {key} ada di data_dict : {check_key}\n")
+
+# mengakses value (read) menggunakan get
+print(data_dict["cup"],"\n")
+print(data_dict.get("cup"),"\n")
+print(data_dict.get("cu","key tersebut tidak ditemukan\n"))
+
+# mengubah data
+print(f"sebelum diubah{data_dict}\n")
+data_dict["cup"]= "ucup si ganteng"
+
+data_dict["dee"]= "ade si lucu"
+print(f"setelah diubah diubah{data_dict}\n")
+
+# update
+data_dict.update({"pet":"opet si buhil"})
+print(f"sebelum ditambah{data_dict}\n")
+
+data_dict.update({"ren":"ren si oren"})
+print(f"Setelah ditambah{data_dict}\n")
+
+# menghapus data
+del data_dict["ren"]
+print(f"setelah dihapus :{data_dict}")
+
+
+
